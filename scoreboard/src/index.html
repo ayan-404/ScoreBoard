@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scoreboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+
+        <main>
+            <div class="container">
+                <h1>scoreboard</h1>
+                <h3 class="value"><span id="score1">0</span> - <span id="score2">0</span></h3>
+                <div class="button-container">
+
+                    <img id="team1" src="../assets/images/arsenal.png" width="225px" height="150px">
+
+                    <button class="btn undo1">undo</button>
+                    <!-- increase score 1-->
+                    <button class="btn scoreBtn1">increase score</button>
+                    <!-- reset button -->
+                    <button class="btn reset"> reset </button>
+                    <!-- increase score 2-->
+                    <button class="btn scoreBtn2">increase score</button>
+                    <button class="btn undo2">undo</button>
+                    
+                    <img id="team2" src="../assets/images/manCity.png" width="225px" height="150px">
+                    
+                </div>
+
+            </div>
+        </main>
+        
+        <script src="../assets/lib/jquery/jquery.js"></script>
+        <script src="../assets/lib/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
