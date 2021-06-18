@@ -212,3 +212,12 @@ main {
     background: var(--clr-black);
 }
 
+.flt-lt {
+    float: left;
+    margin-left: 155px;
+}
+
+.flt-rt {
+    float: right;
+    margin-right: 155px;
+}
