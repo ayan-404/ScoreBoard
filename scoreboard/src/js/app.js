@@ -16,6 +16,11 @@ const score2 = document.querySelector("#score2");
 // number zero
 const zero = 0;
 
+// team-names
+const teamName1 = document.querySelector(".tm-nm-1");
+const teamName2 = document.querySelector(".tm-nm-2");
+
+
 // teams
 const team1 = document.querySelector("#team1");
 const team2 = document.querySelector("#team2");
@@ -127,42 +132,57 @@ undo2.addEventListener("click", function () {
 
 function teamchange1() {
     var inum1;
+    var teamName;
     var inums1 = ["../assets/images/arsenal.png", "../assets/images/liverpool.png", "../assets/images/manCity.png", "../assets/images/manUnited.png"];
-    
+    var teamNames = ["arsenal", "liverpool", "manchester city", "manchester united"];
+
+
     if (tnum1 == 0) {
         tnum1 += 1;
+        teamName = teamNames[0];
         inum1 = inums1[0];
     } else if (tnum1 == 1) {
         tnum1++;
+        teamName = teamNames[1];
         inum1 = inums1[1];
     } else if (tnum1 == 2) {
         tnum1++;
+        teamName = teamNames[2];
         inum1 = inums1[2];
     } else if (tnum1 == 3) {
         tnum1 = 0;
+        teamName = teamNames[3];
         inum1 = inums1[3];
     }
     team1.src = inum1;
+    teamName1.innerText = teamName;
 }
 
 function teamchange2() {
     var inum2;
     var inums2 = ["../assets/images/arsenal.png", "../assets/images/liverpool.png", "../assets/images/manCity.png", "../assets/images/manUnited.png"];
-    
+    var teamName;
+    var teamNames = ["arsenal", "liverpool", "manchester city", "manchester united"];
+
     if (tnum2 == 0) {
         tnum2 += 1;
         inum2 = inums2[0];
+        teamName = teamNames[0];
     } else if (tnum2 == 1) {
         tnum2++;
         inum2 = inums2[1];
+        teamName = teamNames[1];
     } else if (tnum2 == 2) {
         tnum2++;
         inum2 = inums2[2];
+        teamName = teamNames[2];
     } else if (tnum2 == 3) {
         tnum2 = 0;
         inum2 = inums2[3];
+        teamName = teamNames[3];
     }
     team2.src = inum2;
+    teamName2.innerText = teamName;
 }
 
 team1.addEventListener("click", teamchange1);
